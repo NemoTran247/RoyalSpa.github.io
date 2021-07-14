@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Royal Spa's Services </title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&family=Marck+Script&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+    <style>
+        body {
+            padding-top: 30px;
+        }
+
+        nav {
+            box-shadow: 0 5px 10px 0 rgba(133, 133, 133, 0.2);
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            width: 100%; /* Full width */
+            }
+
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 40%;
+            }    
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            }
+
+        .right {
+            position: absolute;
+            right: 0px;
+            width: 300px;
+            border: 3px solid #73AD21;
+            padding: 10px;
+            }
+
+        .button {
+            border: none;
+            color: white;
+            width: 160px;
+            padding: 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+            }
+
+        .button {
+            background-color: rgb(235, 78, 78); 
+            color: rgb(255, 255, 255); 
+            }
+
+        .button:hover {
+            background-color: rgb(151, 48, 48);
+            color: white;
+            }
+
+        .button2 {
+            background-color: white; 
+            color: rgb(235, 78, 78); 
+            border: 2px solid rgb(235, 78, 78);
+            }
+
+        .button2:hover {
+            background-color: rgb(151, 48, 48);
+            border: 2px solid rgb(151, 48, 48);
+            color: white;
+            }
+
+        .button3 {
+            background-color: white; 
+            color: rgb(235, 78, 78); 
+            border: 2px solid rgb(235, 78, 78);
+            padding: 8px;
+            }
+
+        .button3:hover {
+            background-color: rgb(151, 48, 48);
+            border: 2px solid rgb(151, 48, 48);
+            color: white;
+            }
+
+
+
+
+
+
+            .footer-clean {
+            padding:50px 0;
+            background-color:#fff;
+            color:#4b4c4d;
+            }
+
+            .footer-clean h3 {
+            margin-top:0;
+            margin-bottom:12px;
+            font-weight:bold;
+            font-size:16px;
+            }
+
+            .footer-clean ul {
+            padding:0;
+            list-style:none;
+            line-height:1.6;
+            font-size:14px;
+            margin-bottom:0;
+            }
+
+            .footer-clean ul a {
+            color:inherit;
+            text-decoration:none;
+            opacity:0.8;
+            }
+
+            .footer-clean ul a:hover {
+            opacity:1;
+            }
+
+            .footer-clean .item.social {
+            text-align:right;
+            }
+
+            @media (max-width:767px) {
+            .footer-clean .item {
+                text-align:center;
+                padding-bottom:20px;
+            }
+            }
+
+            @media (max-width: 768px) {
+            .footer-clean .item.social {
+                text-align:center;
+            }
+            }
+
+            .footer-clean .item.social > a {
+            font-size:24px;
+            width:40px;
+            height:40px;
+            line-height:40px;
+            display:inline-block;
+            text-align:center;
+            border-radius:50%;
+            border:1px solid #ccc;
+            margin-left:10px;
+            margin-top:22px;
+            color:inherit;
+            opacity:0.75;
+            }
+
+            .footer-clean .item.social > a:hover {
+            opacity:0.9;
+            }
+
+            @media (max-width:991px) {
+            .footer-clean .item.social > a {
+                margin-top:40px;
+            }
+            }
+
+            @media (max-width:767px) {
+            .footer-clean .item.social > a {
+                margin-top:10px;
+            }
+            }
+
+            .footer-clean .copyright {
+            margin-top:14px;
+            margin-bottom:0;
+            font-size:13px;
+            opacity:0.6;
+            }
+
+
+        
+
+
+
+
+
+
+
+
+
+        .fa {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 30px;
+            width: 60px;
+            text-align: center;
+            text-decoration: none;
+            margin: 10px 10px;
+            border-radius: 20px;
+            }
+
+        .fa:hover {
+                opacity: 0.7;
+            }
+
+        .fa-facebook {
+            color: white;
+            }
+
+        .fa-google {
+            color: white;
+            }
+
+        .fa-youtube {
+            color: white;
+            }
+
+        .fa-instagram {
+            color: white;
+            }
+
+        * {
+            box-sizing: border-box;
+            }
+
+        form.example input[type=text] {
+            padding: 6px;
+            font-size: 17px;
+            float: left;
+            width: 300px;
+            background: #f1f1f1;
+            border-radius: 8px;
+            }
+
+        form.example button {
+            float: center;
+            width: 120px;
+            padding: 6px;
+            background: rgb(214, 70, 70);
+            color: white;
+            font-size: 17px;
+            border-left: none;
+            cursor: pointer;
+            border-radius: 8px;
+            }
+
+        form.example button:hover {
+            background: rgb(98, 36, 36);
+            }
+
+        form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+        <a class="nav-link" href="index.htm"> 
+            <img src="Logo/Logo-Light.png" width="80px" >
+        </a>            
+
+        <ul class="navbar-nav ml-auto" style="text-align: center;">
+            <li class="nav-item" style="padding-right: 30px;">
+                <a class="nav-link" href="Galleries.html" style="font-size: 20px;"> Galleries </a>
+            </li>
+
+            <li class="nav-item" style="padding-right: 30px;">
+                <a class="nav-link" href="Services.html" style="font-size: 20px;"> Services </a>
+            </li>
+
+            <li class="nav-item" style="padding-right: 30px;">
+                <a class="nav-link" href="AboutUs.html" style="font-size: 20px;"> About Us </a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+
+    <!-- ----------------- Section Line ----------------- -->
+
+
+    <!-- ----------------- Section Line ----------------- -->
+
+    <section style="background-image: url('Photos/Spa2.jpg'); background-size: cover; height: 800px;">
+
+    </section>
+
+
+    <!-- ----------------- Section Line ----------------- -->
+
+
+    <div class="container" style="padding-top: 40px; padding-bottom: 60px;">
+
+        <div class="row">
+            <h1 style="font-family: 'Aladin';font-size: 35px; color: rgb(235, 78, 78); padding-top: 20px;">For yours hands </h1>
+        </div>
+
+        <hr style="border-width: 1px;">
+
+        <div class="row" style="padding-top: 20px;">
+                <div class="col" style="padding-right: 60px;">
+                    <div class="row" style="padding-bottom: 10px;">
+                        <h5> NAKED MANICURE </h5>
+                        <p style="color: rgb(131, 131, 131);text-align: justify;"> file + buff, cuticle tidy, mini massage, moisturise + oil (no polish)  </p>
+                    </div>
+
+                    <div class="row">
+                        <h6 style="color: tomato"> 20 mins | £22 </h6>
+                    </div>
+
+                    <hr>
+
+                    <div class="row" style="padding-top: 40px;">
+                        <h5> SIGNATURE MANICURE </h5>
+                        <p style="color: rgb(131, 131, 131);text-align: justify;"> file + buff,  cuticle tidy, mini massage, polish, moisturise + oil </p>
+                    </div>
+
+                    <div class="row">
+                        <h6 style="color: tomato"> 30 mins | £27 </h6>
+                    </div>
+
+                    <hr>
+
+                    <div class="row" style="padding-top: 40px;">
+                        <h5> GEL MANICURE  </h5>
+                        <p style="color: rgb(131, 131, 131);text-align: justify;"> file + buff,  cuticle tidy, mini massage, gel, moisturise + oil, moisturise + oil </p>
+                    </div>
+
+                    <div class="row">
+                        <h6 style="color: tomato"> 45 mins | £38 </h6>
+                    </div>
+
+                    <hr>
+
+                    <div class="row" style="padding-top: 40px;">
+                        <h5> FREE FROM MANICURE  </h5>
+                        <p  style="color: rgb(131, 131, 131);text-align: justify;"> file + buff,  cuticle tidy, mini massage, free from polish, organic moisturise + oil </p>
+                    </div>
+
+                    <div class="row">
+                        <h6 style="color: tomato"> 30 mins | £38 </h6>
+                    </div>
+                    
+                    <hr>
+
+                    <div class="row" style="padding-top: 40px;">
+                        <h5> FREE FROM GEL MANICURE  </h5>
+                        <p  style="color: rgb(131, 131, 131);text-align: justify;"> file + buff,  cuticle tidy, mini massage, free from gel, organic moisturise + oil </p>
+                    </div>
+
+                    <div class="row">
+                        <h6 style="color: tomato"> 45 mins| £45 </h6>
+                    </div>
+
+
+
+                    <div class="row" style="padding-top: 40px;">
+                        <button class="button button3" style="width: 100%;"> Book appointment </button>        
+                    </div>                    
+                </div>
+
+
+
+                <div class="col" style="background-image: url('Photos/Spa3.jpg'); background-size: cover; border-radius: 8px;">
+                
+                </div> 
+        </div>
+    </div>
+
+
+    <!-- ----------------- Section Line ----------------- -->
+
+    <div class="container" style="padding-top: 40px; padding-bottom: 60px;">
+
+        <div class="row">
+            <h1 style="font-family: 'Aladin';font-size: 35px; color: rgb(235, 78, 78); padding-top: 20px;"> For yours feet </h1>
+        </div>
+
+        <hr style="border-width: 1px;">
+
+        <div class="row" style="padding-top: 20px;">
+                <div class="col" style="background-image: url('Photos/Spa5.jpg'); background-size: cover; border-radius: 8px;">
+                    
+                </div> 
+
+
+                <div class="col" style="padding-left: 60px;">
+                    <div class="row" style="padding-bottom: 10px;">
+                        <h5> NAKED MANICURE </h5>
+                        <p style="color: rgb(131, 131, 131);text-align: justify;"> file + buff, cuticle tidy, mini massage, moisturise + oil (no polish)  </p>
+                    </div>
+
+                    <div class="row">
+                        <h6 style="color: tomato"> 20 mins | £22 </h6>
+                    </div>
+
+                    <hr>
+
+                    <div class="row" style="padding-top: 40px;">
+                        <h5> SIGNATURE MANICURE </h5>
+                        <p style="color: rgb(131, 131, 131);text-align: justify;"> file + buff,  cuticle tidy, mini massage, polish, moisturise + oil </p>
+                    </div>
+
+                    <div class="row">
+                        <h6 style="color: rgb(235, 78, 78)"> 30 mins | £27 </h6>
+                    </div>
+
+                    <hr>
+
+                    <div class="row" style="padding-top: 40px;">
+                        <h5> GEL MANICURE  </h5>
+                        <p style="color: rgb(131, 131, 131);text-align: justify;"> file + buff,  cuticle tidy, mini massage, gel, moisturise + oil, moisturise + oil </p>
+                    </div>
+
+                    <div class="row">
+                        <h6 style="color: rgb(235, 78, 78)"> 45 mins | £38 </h6>
+                    </div>
+
+                    <hr>
+
+                    <div class="row" style="padding-top: 40px;">
+                        <h5> FREE FROM MANICURE  </h5>
+                        <p style="color: rgb(131, 131, 131);text-align: justify;"> file + buff,  cuticle tidy, mini massage, free from polish, organic moisturise + oil </p>
+                    </div>
+
+                    <div class="row">
+                        <h6 style="color: rgb(235, 78, 78)"> 30 mins | £38 </h6>
+                    </div>
+                    
+                    <hr>
+
+                    <div class="row" style="padding-top: 40px;">
+                        <h5> FREE FROM GEL MANICURE  </h5>
+                        <p style="color: rgb(131, 131, 131);text-align: justify;"> file + buff,  cuticle tidy, mini massage, free from gel, organic moisturise + oil </p>
+                    </div>
+
+                    <div class="row">
+                        <h6 style="color: rgb(235, 78, 78)"> 45 mins| £45 </h6>
+                    </div>
+
+
+
+                    <div class="row" style="padding-top: 40px;">
+                        <button class="button button3" style="width: 100%;"> Book appointment </button>        
+                    </div>                    
+                </div>
+        </div>
+    </div>
+
+    <!-- ----------------- Section Line ----------------- -->
+
+
+
+
+
+    <div class="container" style="padding-top: 40px; padding-bottom: 60px;">
+
+        <div class="row">
+            <h1 style="font-family: 'Aladin';font-size: 35px; color: rgb(235, 78, 78); padding-top: 20px;"> Nail art </h1>
+        </div>
+
+        <hr style="border-width: 1px;">
+        
+        <div class="row">
+                <div class="col" style="padding-right: 60px;">
+                    <div class="row">
+                        <h5> CLEAN N SIMPLE (NAIL ART) </h5>                      
+                    </div>
+                    <div class="row" style="padding-top: 10px; padding-bottom: 40px;">
+                        <p style="color: rgb(131, 131, 131);text-align: justify;"> Dots  10 MIN | £10 </p>
+                    </div>
+
+
+                    <hr>
+
+
+                    <div class="row">
+                        <h5> ALL OUT (NAIL ART) </h5>                      
+                    </div>
+                    <div class="row" style="padding-top: 10px;">
+                        <p  style="color: rgb(131, 131, 131);text-align: justify;"> Chrome, foil, tape (gel only)   15 MIN | £20 </p>
+                    </div>
+                    <div class="row">
+                        <p  style="color: rgb(131, 131, 131);text-align: justify;"> Tortoiseshell, marble, animal print   20 MIN | £25 </p>
+                    </div>
+                    <div class="row">
+                        <p  style="color: rgb(131, 131, 131);text-align: justify;"> Tie dye, Flames   25 MIN | £30 </p>
+                    </div>
+                    <div class="row">
+                        <p  style="color: rgb(131, 131, 131);text-align: justify;"> Custom design 30MIN | £35 </p>
+                    </div>
+                    <div class="row">
+                        <p  style="color: rgb(131, 131, 131);text-align: justify;"> Custom design - signature nails (two nails max)  15 MIN | £17</p>
+                    </div>
+
+                    <div class="row" style="padding-top: 40px;">
+                        <button class="button button3" style="width: 100%;"> Book appointment </button>        
+                    </div> 
+                </div>
+
+
+                <div class="col" style="background-image: url('Photos/Spa5.jpg'); background-size: cover; border-radius: 8px;">
+                
+                </div> 
+
+                
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- ----------------- Section Line ----------------- -->
+    
+    <div class="container" style="padding-top: 40px;">      
+        <h1 style="font-family: 'Aladin';font-size: 35px; color: rgb(235, 78, 78); padding-top: 20px;"> A La Carte </h1>
+        
+
+        <hr>
+
+        <img src="Photos/Spa3.jpg" width="100%" style="border-radius: 8px;">
+    </div>
+
+    
+
+    <div class="container" style="padding-bottom: 60px;">      
+        <div class="row" style="padding-top: 40px;">
+            <div class="col">
+                <h5> REHAB TREATMENT </h5>
+
+                <div class="row" style="padding-left: 15px;">
+                    <p style="color: rgb(131, 131, 131);text-align: justify;"> If you’re ready to take a break from acrylics/gels & worried about the condition they’re in book our rehab treatment for step one of your transition back to healthy natural nails. Soak off (if needed),  file + buff, revitalising oil mask followed by our free from moisture treatment & either Kure top coat or high shine buff to finish </p>
+                </div>
+
+                <h6 style="color: tomato"> 75MIN | £48 </h6>
+
+                <hr>
+
+                <h5 style="padding-top: 30px;"> FREE FROM MOISTURE TREATMENT (ADD ON ONLY) </h5>
+
+                <div class="row" style="padding-left: 15px;">
+                    <p style="color: rgb(131, 131, 131);text-align: justify;"> Plant-based, petroleum-free alternative to paraffin wax. A rich blend of shea butter, soy, jojoba, organic coconut oil, vitamin E, and essential oils that moisturise and leaves the skin soft and supple.  </p>
+                </div>
+
+                <h6 style="color: tomato"> 20 MIN | £18 </h6>
+
+                <hr>
+
+                <h5 style="padding-top: 30px;"> CALLUS TREATMENT </h5>
+
+                <div class="row" style="padding-left: 15px;">
+                    <p style="color: rgb(131, 131, 131);text-align: justify;"> Perfect for cracked heels, Mavex CALLUSPEELING is free from: parabens, formaldehyde, added preservatives, mineral oil or paraffin. Formulated with a synergic complex of plant extracts from Swiss alpine herbs & plants such as Gentian, Blueberry, Spruce Fir & pure glacier water encapsulated in liposomes, leaving you with beautiful feet. Suitable for customers with diabetes CALLUSPEELING negates the use of blades or drills  </p>
+                </div>
+
+                <h6 style="color: tomato"> 30 MIN | £38 </h6>
+
+                <hr>
+
+                <h5 style="padding-top: 30px;"> CALLUS TREATMENT (ADD ON ONLY) </h5>
+
+                <div class="row" style="padding-left: 15px;">
+                    <p style="color: rgb(131, 131, 131);text-align: justify;"> Add Mavex CALLUSPEELING onto your pedicure treatment </p>
+                </div>
+
+                <h6 style="color: tomato"> 15 MIN | £22 </h6>
+
+                <hr>
+
+                <h5 style="padding-top: 30px;"> RESTORE TREATMENT </h5>
+
+                <div class="row" style="padding-left: 15px;">
+                    <p style="color: rgb(131, 131, 131);text-align: justify;"> Deeply penetrating treatment that strengthens the nail plate by filling in gaps & ridges while providing a protective shield to prevent nails from breaking. Using IBX enables your natural nail to grow longer while looking & feeling healthier (includes a NAKED MANICURE) </p>
+                </div>
+
+                <h6 style="color: tomato"> 35 MIN | £38 </h6>
+
+                <hr>
+
+                <h5 style="padding-top: 30px;"> RESTORE TREATMENT (ADD ON ONLY) </h5>
+
+                <div class="row" style="padding-left: 15px;">
+                    <p style="color: rgb(131, 131, 131);text-align: justify;"> Add IBX to the base of your manicure treatment  </p>
+                </div>
+
+                <h6 style="color: tomato"> 15 MIN | £22 </h6>
+
+                <hr>
+
+                <h5 style="padding-top: 30px;"> THE R+R </h5>
+
+                <div class="row" style="padding-left: 15px;">
+                    <p style="color: rgb(131, 131, 131);text-align: justify;"> We’ve combined two of our most popular treatments to give your nails a full rejuvenation - The R+R is a hybrid of our REHAB and RESTORE! This new super treatment includes gel/acrylic removal, a naked manicure, IBX to penetrate and mend your nail beds, finishing with a warm essential oil & Shea butter mask (a petroleum free paraffin wax alternative) to hydrate your skin & hands! </p>
+                </div>
+
+                <h6 style="color: tomato"> 90 MIN | £70 </h6>
+
+                <div class="row" style="padding-top: 40px; padding-left: 12px;">
+                    <button class="button button3" style="width: 50%;"> Book appointment </button>        
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container-fluid" style="padding-top: 40px;">      
+        <img src="Photos/Spa3.jpg" width="100%" style="border-radius: 0px;">
+    </div>
+    <!-- ----------------- Section Line ----------------- -->
+
+
+
+
+
+
+
+    
+    <!-- ----------------- Footer ----------------- -->
+    
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3> Services </h3>
+                        <ul>
+                            <li><a href="#"> Hands Massage </a></li>
+                            <li><a href="#"> Feet Massage </a></li>
+                            <li><a href="#"> Full Body Massage </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3> About Us </h3>
+                        <ul>
+                            <li><a href="#"> Company </a></li>
+                            <li><a href="#"> Business License </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                    </div>
+
+                    <p style="padding-top: 80px;"> Spa Store | Designed by Hai Trung Tran HA140462</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

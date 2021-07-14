@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Royal Spa </title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&family=Marck+Script&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        body {
+            padding-top: 30px;
+        }
+
+        nav {
+            box-shadow: 0 5px 10px 0 rgba(133, 133, 133, 0.2);
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            width: 100%; /* Full width */
+            }
+
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 40%;
+            }    
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            }
+
+        .right {
+            position: absolute;
+            right: 0px;
+            width: 300px;
+            border: 3px solid #73AD21;
+            padding: 10px;
+            }
+
+        .button {
+            border: none;
+            color: white;
+            width: 160px;
+            padding: 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+            }
+
+        .button {
+            background-color: rgb(235, 78, 78); 
+            color: rgb(255, 255, 255); 
+            }
+
+        .button:hover {
+            background-color: rgb(151, 48, 48);
+            color: white;
+            }
+
+        .button2 {
+            background-color: white; 
+            color: rgb(235, 78, 78); 
+            border: 2px solid rgb(235, 78, 78);
+            }
+
+        .button2:hover {
+            background-color: rgb(151, 48, 48);
+            border: 2px solid rgb(151, 48, 48);
+            color: white;
+            }
+
+        .button3 {
+            background-color: white; 
+            color: rgb(235, 78, 78); 
+            border: 2px solid rgb(235, 78, 78);
+            padding: 8px;
+            }
+
+        .button3:hover {
+            background-color: rgb(151, 48, 48);
+            border: 2px solid rgb(151, 48, 48);
+            color: white;
+            }
+
+
+        
+            .footer-clean {
+            padding:50px 0;
+            background-color:#fff;
+            color:#4b4c4d;
+            }
+
+            .footer-clean h3 {
+            margin-top:0;
+            margin-bottom:12px;
+            font-weight:bold;
+            font-size:16px;
+            }
+
+            .footer-clean ul {
+            padding:0;
+            list-style:none;
+            line-height:1.6;
+            font-size:14px;
+            margin-bottom:0;
+            }
+
+            .footer-clean ul a {
+            color:inherit;
+            text-decoration:none;
+            opacity:0.8;
+            }
+
+            .footer-clean ul a:hover {
+            opacity:1;
+            }
+
+            .footer-clean .item.social {
+            text-align:right;
+            }
+
+            @media (max-width:767px) {
+            .footer-clean .item {
+                text-align:center;
+                padding-bottom:20px;
+            }
+            }
+
+            @media (max-width: 768px) {
+            .footer-clean .item.social {
+                text-align:center;
+            }
+            }
+
+            .footer-clean .item.social > a {
+            font-size:24px;
+            width:40px;
+            height:40px;
+            line-height:40px;
+            display:inline-block;
+            text-align:center;
+            border-radius:50%;
+            border:1px solid #ccc;
+            margin-left:10px;
+            margin-top:22px;
+            color:inherit;
+            opacity:0.75;
+            }
+
+            .footer-clean .item.social > a:hover {
+            opacity:0.9;
+            }
+
+            @media (max-width:991px) {
+            .footer-clean .item.social > a {
+                margin-top:40px;
+            }
+            }
+
+            @media (max-width:767px) {
+            .footer-clean .item.social > a {
+                margin-top:10px;
+            }
+            }
+
+            .footer-clean .copyright {
+            margin-top:14px;
+            margin-bottom:0;
+            font-size:13px;
+            opacity:0.6;
+            }
+
+
+
+
+
+
+        .fa {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 10px 10px;
+            border-radius: 20px;
+            }
+
+        .fa:hover {
+                opacity: 0.7;
+            }
+
+        .fa-facebook {
+            color: white;
+            }
+
+        .fa-google {
+            color: white;
+            }
+
+        .fa-youtube {
+            color: white;
+            }
+
+        .fa-instagram {
+            color: white;
+            }
+
+        * {
+            box-sizing: border-box;
+            }
+
+        form.example input[type=text] {
+            padding: 6px;
+            font-size: 17px;
+            float: left;
+            width: 300px;
+            background: #f1f1f1;
+            border-radius: 8px;
+            }
+
+        form.example button {
+            float: center;
+            width: 120px;
+            padding: 6px;
+            background: rgb(214, 70, 70);
+            color: white;
+            font-size: 17px;
+            border-left: none;
+            cursor: pointer;
+            border-radius: 8px;
+            }
+
+        form.example button:hover {
+            background: rgb(98, 36, 36);
+            }
+
+        form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+        <a class="nav-link" href="index.html"> 
+            <img src="Logo/Logo-Light.png" width="80px" >
+        </a>            
+
+        <ul class="navbar-nav ml-auto" style="text-align: center;">
+            <li class="nav-item" style="padding-right: 30px;">
+                <a class="nav-link" href="Galleries.html" style="font-size: 20px;"> Galleries </a>
+            </li>
+
+            <li class="nav-item" style="padding-right: 30px;">
+                <a class="nav-link" href="Services.html" style="font-size: 20px;"> Services </a>
+            </li>
+
+            <li class="nav-item" style="padding-right: 30px;">
+                <a class="nav-link" href="AboutUs.html" style="font-size: 20px;"> About Us </a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+
+    <!-- ----------------- Section Line ----------------- -->
+    <section style="background-image: url('Photos/Background.png'); background-size: cover; box-shadow: 0 5px 30px 0 rgba(133, 133, 133, 0.2);">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                </div>
+
+                <div class="col" style="padding-top: 200px;padding-bottom: 280px;">
+                    <h1 style="padding-top: 80px; color: rgb(0, 0, 0); position: center; text-align: left; font-family: 'Cormorant SC'; font-size: 63px;"> Harmony & Beauty </h1 >
+                    <p style="font-size: 16px; padding-bottom: 40px; color: rgb(168, 168, 168);text-align: justify;"> Holisticly synthesize 24/7 methods of empowerment vis-a-vis inexpensive alignments. Conveniently brand worldwide total linkage rather than integraded scenaries</p> 
+                    <div style="width: 350px">
+                        <button class="button button1" > 
+                            About Us 
+                        </button>  
+
+                        <button class="button button2"> 
+                            Ours Services 
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+    <!-- ----------------- Section Line ----------------- -->
+    <div class="container" style="padding-top: 80px;">
+        <div class="row">
+            <div class="col">
+                <img src="Photos/1.png" style="width: 250px;border-radius: 8px; box-shadow: 0 5px 10px 0 rgba(44, 44, 44, 0.2);">
+                <h4 style="text-align: left; padding-top: 10px; color: rgb(235, 78, 78);"> CURLING HAIR </h4>
+                <p> 90 mins </p>
+                <p style="font-size: 16px; padding-bottom: 10px; color: rgb(168, 168, 168);text-align: justify;"> Suitable hairstyle consultation, shampooing, cutting according to ... </p>
+                <button class="button button3" style="width: 100%;"> 
+                    Try Now 
+                </button>
+            </div>
+
+            <div class="col">
+                <img src="Photos/2.png" style="width: 250px;border-radius: 8px; box-shadow: 0 5px 10px 0 rgba(44, 44, 44, 0.2);">
+                <h4 style="text-align: left; padding-top: 10px; color: rgb(235, 78, 78);"> HAIR REPAIR </h4>
+                <p> 30 mins </p>
+                <p style="font-size: 16px; padding-bottom: 10px; color: rgb(168, 168, 168);text-align: justify;"> Shampoo card for both men and women Apply all normal shampoos </p>
+                <button class="button button3" style="width: 100%;"> 
+                    Try Now 
+                </button>
+            </div>
+
+            <div class="col">
+                <img src="Photos/3.png" style="width: 250px;border-radius: 8px; box-shadow: 0 5px 10px 0 rgba(44, 44, 44, 0.2);">
+                <h4 style="text-align: left; padding-top: 10px; color: rgb(235, 78, 78);"> DYEING HAIR </h4>
+                <p> 60 mins </p>
+                <p style="font-size: 16px; padding-bottom: 10px; color: rgb(168, 168, 168);text-align: justify;"> Haircut, Restoration, Bingo Fashion Dye, Plant Dye </p>
+                <button class="button button3" style="width: 100%;"> 
+                    Try Now 
+                </button>
+            </div>
+
+            <div class="col">
+                <img src="Photos/4.png" style="width: 250px;border-radius: 8px; box-shadow: 0 5px 10px 0 rgba(44, 44, 44, 0.2);">
+                <h4 style="text-align: left; padding-top: 10px; color: rgb(235, 78, 78);"> ALL IN ONE </h4>
+                <p> 90 mins </p>
+                <p style="font-size: 16px; padding-bottom: 10px; color: rgb(168, 168, 168);text-align: justify;"> Loreal fashion coloring, Alonzo curling, straightening, curling. </p>
+                <button class="button button3" style="width: 100%;"> 
+                    Try Now 
+                </button>
+            </div>
+       
+        </div>
+    </div>
+
+
+    <!-- ----------------- Section Line ----------------- -->
+
+
+
+
+    <div class="container" style="padding-top: 60px; padding-bottom: 60px;">
+        <div class="row">
+                <div class="col">
+                    <h1 style="font-family: 'Bungee Inline';font-size: 35px; color: rgb(235, 78, 78);"> A LUXURY SALON EXPERIENCE IN THE HEART OF THE FINANCIAL DISTRICT NYC 
+                    </h1>
+                </div> 
+
+                <div class="col">
+                    <div class="row" style="padding-bottom: 60px; ">
+                        <h2> SALON IS THE PERFECT PLACE TO GET AN EXCEPTIONAL HAIRSTYLE FROM TOP-NOTCH, </h2>
+                    </div>
+
+                    <div class="row" style="color: rgb(182, 182, 182);; text-align: justify;">
+                        <p> Situated in Lower Manhattan, our two boutique salons serve Wall Street and the Financial District, as well as Battery Park and the World Trade Center area. We are the most recommended salon for hotels and spas in the Financial District and Battery Park neighborhoods.Our salon provides services to men and women of any hair type and style: edgy or classic, straight or curly, short or long. We believe that hair should be defined by its nature and its shape, and we use the industry's top brand, Keratase to bring out your hair's best. </p>
+                        <br>
+                        <p> Our mission is to provide you with forward-thinking, sophisticated style. Our space, designed by Italian architect Matias Sagaria, is filled with linear balance and injects our inspiration with modernity and purity. </p>
+                    </div>
+
+                    <div class="row" style="padding-top: 20px; color: rgb(182, 182, 182)">
+                        <button class="button button1" style="width: 100%;"> View more </button>        
+                    </div>
+
+                    
+                </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid" style="padding-top: 40px;">      
+        <img src="Photos/Spa3.jpg" width="100%" style="border-radius: 0px;">
+    </div>
+
+
+    
+    <!-- ----------------- Footer ----------------- -->
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3> Services </h3>
+                        <ul>
+                            <li><a href="#"> Hands Massage </a></li>
+                            <li><a href="#"> Feet Massage </a></li>
+                            <li><a href="#"> Full Body Massage </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3> About Us </h3>
+                        <ul>
+                            <li><a href="#"> Company </a></li>
+                            <li><a href="#"> Business License </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                    </div>
+
+                    <p style="padding-top: 80px;"> Spa Store | Designed by Hai Trung Tran HA140462</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

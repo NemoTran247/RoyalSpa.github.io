@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Royal Spa's Services </title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&family=Marck+Script&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+
+    <style>
+        body {
+            padding-top: 30px;
+        }
+
+        nav {
+            box-shadow: 0 5px 10px 0 rgba(133, 133, 133, 0.2);
+            position: fixed; /* Set the navbar to fixed position */
+            top: 0; /* Position the navbar at the top of the page */
+            width: 100%; /* Full width */
+            }
+
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 40%;
+            }    
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            }
+
+        .right {
+            position: absolute;
+            right: 0px;
+            width: 300px;
+            border: 3px solid #73AD21;
+            padding: 10px;
+            }
+
+        .button {
+            border: none;
+            color: white;
+            width: 160px;
+            padding: 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+            }
+
+        .button {
+            background-color: rgb(235, 78, 78); 
+            color: rgb(255, 255, 255); 
+            }
+
+        .button:hover {
+            background-color: rgb(151, 48, 48);
+            color: white;
+            }
+
+        .button2 {
+            background-color: white; 
+            color: rgb(235, 78, 78); 
+            border: 2px solid rgb(235, 78, 78);
+            }
+
+        .button2:hover {
+            background-color: rgb(151, 48, 48);
+            border: 2px solid rgb(151, 48, 48);
+            color: white;
+            }
+
+        .button3 {
+            background-color: white; 
+            color: rgb(235, 78, 78); 
+            border: 2px solid rgb(235, 78, 78);
+            padding: 8px;
+            }
+
+        .button3:hover {
+            background-color: rgb(151, 48, 48);
+            border: 2px solid rgb(151, 48, 48);
+            color: white;
+            }
+
+
+
+
+
+
+            .footer-clean {
+            padding:50px 0;
+            background-color:#fff;
+            color:#4b4c4d;
+            }
+
+            .footer-clean h3 {
+            margin-top:0;
+            margin-bottom:12px;
+            font-weight:bold;
+            font-size:16px;
+            }
+
+            .footer-clean ul {
+            padding:0;
+            list-style:none;
+            line-height:1.6;
+            font-size:14px;
+            margin-bottom:0;
+            }
+
+            .footer-clean ul a {
+            color:inherit;
+            text-decoration:none;
+            opacity:0.8;
+            }
+
+            .footer-clean ul a:hover {
+            opacity:1;
+            }
+
+            .footer-clean .item.social {
+            text-align:right;
+            }
+
+            @media (max-width:767px) {
+            .footer-clean .item {
+                text-align:center;
+                padding-bottom:20px;
+            }
+            }
+
+            @media (max-width: 768px) {
+            .footer-clean .item.social {
+                text-align:center;
+            }
+            }
+
+            .footer-clean .item.social > a {
+            font-size:24px;
+            width:40px;
+            height:40px;
+            line-height:40px;
+            display:inline-block;
+            text-align:center;
+            border-radius:50%;
+            border:1px solid #ccc;
+            margin-left:10px;
+            margin-top:22px;
+            color:inherit;
+            opacity:0.75;
+            }
+
+            .footer-clean .item.social > a:hover {
+            opacity:0.9;
+            }
+
+            @media (max-width:991px) {
+            .footer-clean .item.social > a {
+                margin-top:40px;
+            }
+            }
+
+            @media (max-width:767px) {
+            .footer-clean .item.social > a {
+                margin-top:10px;
+            }
+            }
+
+            .footer-clean .copyright {
+            margin-top:14px;
+            margin-bottom:0;
+            font-size:13px;
+            opacity:0.6;
+            }
+
+
+        
+
+
+
+
+
+
+
+
+
+        .fa {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 30px;
+            width: 60px;
+            text-align: center;
+            text-decoration: none;
+            margin: 10px 10px;
+            border-radius: 20px;
+            }
+
+        .fa:hover {
+                opacity: 0.7;
+            }
+
+        .fa-facebook {
+            color: white;
+            }
+
+        .fa-google {
+            color: white;
+            }
+
+        .fa-youtube {
+            color: white;
+            }
+
+        .fa-instagram {
+            color: white;
+            }
+
+        * {
+            box-sizing: border-box;
+            }
+
+        form.example input[type=text] {
+            padding: 6px;
+            font-size: 17px;
+            float: left;
+            width: 300px;
+            background: #f1f1f1;
+            border-radius: 8px;
+            }
+
+        form.example button {
+            float: center;
+            width: 120px;
+            padding: 6px;
+            background: rgb(214, 70, 70);
+            color: white;
+            font-size: 17px;
+            border-left: none;
+            cursor: pointer;
+            border-radius: 8px;
+            }
+
+        form.example button:hover {
+            background: rgb(98, 36, 36);
+            }
+
+        form.example::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+        <a class="nav-link" href="index.html"> 
+            <img src="Logo/Logo-Light.png" width="80px" >
+        </a>            
+
+        <ul class="navbar-nav ml-auto" style="text-align: center;">
+            <li class="nav-item" style="padding-right: 30px;">
+                <a class="nav-link" href="Galleries.html" style="font-size: 20px;"> Galleries </a>
+            </li>
+
+            <li class="nav-item" style="padding-right: 30px;">
+                <a class="nav-link" href="Services.html" style="font-size: 20px;"> Services </a>
+            </li>
+
+            <li class="nav-item" style="padding-right: 30px;">
+                <a class="nav-link" href="AboutUs.html" style="font-size: 20px;"> About Us </a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+
+    <!-- ----------------- Section Line ----------------- -->
+
+    <div class="container" style="padding-top: 120px;">
+        <div class="row">
+                <div class="col">
+                    <h1 style="font-family: 'Josefin Sans';font-size: 60px"> WELCOME TO OURS SPA STORE  </h1>
+                    <br>
+                    <p style="color: rgb(131, 131, 131);text-align: justify; padding-right: 30px;"> With more than 3 years of experience in the spa industry, we are committed to giving you new and relaxing feelings after stressful working hours and state-of-the-art technology, along with staff with thousands of hours of experience, pain relief will no longer be your concern. Trust us! </p> 
+
+                    <p style="color: rgb(131, 131, 131);text-align: justify; padding-right: 30px;">With the interior design in aristocratic and luxurious style, you will experience the feeling of relaxation in the most beautiful places in the world. Let we be yours friend! </p>
+                </div> 
+    
+                <div class="col">
+                    <img src="Photos/Spa4.jpg" width="100%" style="border-radius:12px">
+                </div>
+        </div>
+    </div>
+
+
+
+    <div class="container" style="padding-top: 30px; padding-bottom: 60px;">
+        <div class="row">
+                <div class="col">
+                    <img src="Photos/Spa12.jpg" width="100%" style="border-radius: 12px">
+                </div> 
+    
+                <div class="col">
+                    <img src="Photos/Spa10.png" width="100%" style="border-radius: 8px">
+                </div>
+        </div>
+    </div>
+
+
+
+    <div class="container" style="padding-bottom: 40px;">
+        <!-- Row 1-->
+        <div class="row">
+            <div class="col"> 
+                <h3 style="text-align: left; padding-top: 40px;"> LOREM IPSUM SALON IS THE PERFECT PLACE TO GET AN EXCEPTIONAL HAIRSTYLE FROM TOP-NOTCH, INTERNATIONALLY TRAINED STYLISTS AND COLORISTS. </h3>
+                <br>
+                <p  style="color: rgb(131, 131, 131);text-align: justify;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+                <p  style="color: rgb(131, 131, 131);text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+                <p  style="color: rgb(131, 131, 131);text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid" style="padding-top: 40px;">      
+        <img src="Photos/Spa3.jpg" width="100%" style="border-radius: 0px;">
+    </div>
+
+    <!-- ----------------- Section Line ----------------- -->
+
+
+
+
+
+
+
+    
+    <!-- ----------------- Footer ----------------- -->
+    
+    <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3> Services </h3>
+                        <ul>
+                            <li><a href="#"> Hands Massage </a></li>
+                            <li><a href="#"> Feet Massage </a></li>
+                            <li><a href="#"> Full Body Massage </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3> About Us </h3>
+                        <ul>
+                            <li><a href="#"> Company </a></li>
+                            <li><a href="#"> Business License </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+                    </div>
+
+                    <p style="padding-top: 80px;"> Spa Store | Designed by Hai Trung Tran HA140462</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
